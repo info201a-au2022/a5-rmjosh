@@ -3,7 +3,7 @@ library("shiny")
 library("plotly")
 library("leaflet")
 library("hrbrthemes")
-
+library("shinyWidgets")
 
 shinyserver <- function(input, output) {
   
@@ -39,8 +39,6 @@ shinyserver <- function(input, output) {
           name = "CO2 consumption per country") %>%
     layout(title = "CO2 consumption per capita per country")
   
-  
- output$chart_vis <- renderLeaflet()
 
   
   
